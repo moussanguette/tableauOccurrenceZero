@@ -17,7 +17,11 @@ int main(){
     afficheTableau(T,N);// appel a la fonction aficherTableau
     int somme=sommeTableau(T,N);//appel a la fonction somme
     printf("tableau finale :\n");
-    zeroOccurence(T,N);// appel a la fonction zeroOccurence
+    int nouvelleDimension= zeroOccurence(T,N);// appel a la fonction zeroOccurence
+    afficheTableau(T,nouvelleDimension);
+    printf("l'inverse du tableau est :\n");
+    inverseTableau(T,N);
+    printf("\t\t\t\t\tSeparation du tableau :\n");
+    separationTableau(T,N);
     printf("la somme est %d\n",somme);// affichage de la somme du tableau
-    //testOccurence(T,N);
 }
